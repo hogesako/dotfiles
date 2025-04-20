@@ -1,5 +1,5 @@
 #!/bin/bash
 
-if [ -d "~/.bash_aliases" ]; then
+if [ ! -f ~/.bash_aliases ]; then
     command ln -snf `pwd`/.bash_aliases ~/.bash_aliases
 fi
